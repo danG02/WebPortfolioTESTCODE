@@ -17,6 +17,7 @@ colors to use
     margin: 0;
     padding: 0;
     color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body {
     background-image: url("Pictures/Background_.png");
@@ -28,8 +29,13 @@ body {
 
 .Name {
     font-size: 64px;
-    padding-left: 15%;
     padding-top: 20%;
+    text-align: center;
+}
+
+#desc {
+    margin: 2px;
+    padding-top: 5%;
 }
 #inital-box {
     border: 2px dotted;

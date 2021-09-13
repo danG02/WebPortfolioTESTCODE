@@ -1,5 +1,6 @@
 const triggerFlip = document.querySelector('.Card')
 const box2 = document.querySelector('#box2')
+const box3 = document.querySelector('#box3')
 
 
 triggerFlip.addEventListener('click', function() {
@@ -8,6 +9,10 @@ triggerFlip.addEventListener('click', function() {
 
 box2.addEventListener('click', function() {
   box2.classList.toggle('flipped')
+})
+
+box3.addEventListener('click', function() {
+  box3.classList.toggle('flipped')
 })
 
 
@@ -23,5 +28,5 @@ function closeNav() {
   document.getElementById("main").style.marginLeft = "0";
 }
 
-//closes navbar after 5s if user doesnt hover over X
-setTimeout(function() { closeNav(); }, 5000);
+//closes navbar after 2s if user doesnt hover over X
+setTimeout(function() { closeNav(); }, 2000);
