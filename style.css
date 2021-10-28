@@ -20,7 +20,7 @@ colors to use
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body {
-    background-image: url("Pictures/Background_.png");
+    background-image: url("Pictures/Background_.png"); /* Background made by Danny Galan using Procreate*/
     background-size: auto;
     background-color: lightblue;
     width: 100%;
@@ -33,9 +33,18 @@ body {
     text-align: center;
 }
 
+#BackHeader {
+    font-size: 32px;
+    margin: 2px;
+    padding-top: 5%;
+    text-align: center;
+} 
+
 #desc {
     margin: 2px;
     padding-top: 5%;
+    font-size: 22px;
+    text-align: center;
 }
 #inital-box {
     border: 2px dotted;
@@ -57,40 +66,33 @@ body {
     background: none;
     perspective: 800px;
 }
+
 #container {
+    border: 5px solid white;
     width: 100%;
     height: 100%;
-    transform-style: preserve-3d;
+    position: absolute;
+
     transition: all 0.8s ease;
-    border: 5px solid white;
-    backface-visibility: hidden;
+    transform-style: preserve-3d;
 }
 
 #container.flipped {
     transform: rotateY(180deg);
+    transition: 0.5s;
 }
 
-/*#container:hover {
-    transform: rotateY(180deg);
-}*/
-.front {
+.front, .back {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: transparent;
     backface-visibility: hidden;
-    overflow: hidden;
     -webkit-backface-visibility: hidden;
+    overflow: hidden;
+
 }
 .back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    background: transparent;
     transform: rotateY(180deg);
-    overflow: hidden;
-    -webkit-backface-visibility: hidden;
 }
 #navbar {
     height: 100px;
@@ -108,8 +110,7 @@ li {
 li:hover {
     font-size: 50px;
 }
-/*
-li[id="about"]:checked #Biofront {
-    transform: rotateY(180deg);
+
+a {
+    text-decoration: none;
 }
-*/
